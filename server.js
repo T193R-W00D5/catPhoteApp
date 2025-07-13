@@ -1,6 +1,6 @@
-const http = require('http');
-const fs = require('fs');
-const path = require('path');
+const http = import('http');
+const fs = import('fs');
+const path = import('path');
 
 const server = http.createServer((req, res) => {
     let filePath = '.' + req.url;
