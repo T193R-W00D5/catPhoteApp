@@ -3,8 +3,9 @@
   "version": "1.0.0",
   "description": "1. Open a new terminal inside VS Code pointed to you folder\\file location.",
   "main": "script.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node --experimental-vm-modules ./node_modules/jest/bin/jest.js",
     "start": "node server.js"
   },
   "repository": {
@@ -17,5 +18,9 @@
   "bugs": {
     "url": "https://github.com/T193R-W00D5/catPhoteApp/issues"
   },
-  "homepage": "https://github.com/T193R-W00D5/catPhoteApp#readme"
+  "homepage": "https://github.com/T193R-W00D5/catPhoteApp#readme",
+  "devDependencies": {
+    "@jest/globals": "^30.0.4",
+    "jest": "^30.0.4"
+  }
 }
